@@ -60,7 +60,7 @@ header b{color:inherit}
 .login-page:after{content:"";position:absolute;width:420px;height:420px;border:1px solid rgba(244,239,220,.08);border-radius:50%;right:-210px;bottom:-210px;box-shadow:0 0 0 70px rgba(244,239,220,.025),0 0 0 140px rgba(244,239,220,.018);pointer-events:none}
 .login-card{position:relative;z-index:1;width:min(100%,410px);padding:0 34px 34px;border-radius:16px;background:rgba(255,255,255,.985);box-shadow:0 28px 80px rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.35)}
 .login-brand{margin:0 -34px 30px;padding:32px 24px 27px;border-radius:16px 16px 0 0;background:#0e2a47;border-bottom:3px solid #c6a04e}
-.login-brand:before{content:"⌂⌂⌂";display:block;width:58px;margin:0 auto 13px;color:#f4efdc;font-size:28px;letter-spacing:-9px;overflow:hidden}
+.login-brand:before{content:none;display:none}
 .login-brand strong{font-size:22px;color:#f4efdc;letter-spacing:.9px}.login-brand small{font-size:8px;letter-spacing:3.4px}
 .login-card h1{text-align:center;font-family:Georgia,serif;font-size:27px;font-weight:500;letter-spacing:.2px}
 .login-card>p{text-align:center;margin:8px 0 28px;color:#718096;font-size:13px}
