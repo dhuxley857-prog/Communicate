@@ -1,13 +1,13 @@
 import React,{useState,useEffect}from'react';import{createRoot}from'react-dom/client';import{Pin,Plus,Inbox,AlertTriangle,Clock,MessageSquare,X}from'lucide-react';import'./style.css';
 const PEOPLE=['Tommy','Paddy','Ronnie','Ashleigh'];const seed=[{id:1,title:'Confirm site meeting dates',owner:'Tommy',risk:'2026-09-28',due:'2026-09-30',progress:25,note:'Waiting for confirmation from client',pin:true,status:'Open'},{id:2,title:'Issue revised drawing comments',owner:'Paddy',risk:'2026-09-29',due:'2026-10-02',progress:60,note:'Comments drafted — final review required',pin:false,status:'Open'},{id:3,title:'Close outstanding order query',owner:'Ronnie',risk:'2026-09-27',due:'2026-09-29',progress:40,note:'Supplier information incomplete',pin:true,status:'Info required'}];
 function App(){
- const [loggedIn,setLoggedIn]=useState(()=>sessionStorage.getItem('hxc_user')||'');
+ const [loggedIn,setLoggedIn]=useState(()=>{try{const s=JSON.parse(localStorage.getItem('hxc_login')||'null');return s&&Date.now()-s.at<30*60*1000?s.user:''}catch{return''}});
  const [loginName,setLoginName]=useState('');
  const [loginPass,setLoginPass]=useState('');
  const [loginError,setLoginError]=useState('');
  const login=()=>{
    const u=PEOPLE.find(p=>p.toLowerCase()===loginName.trim().toLowerCase());
-   if(u && loginPass===u+'99!'){sessionStorage.setItem('hxc_user',u);setLoggedIn(u);setLoginError('');}
+   if(u && loginPass===u+'99!'){localStorage.setItem('hxc_login',JSON.stringify({user:u,at:Date.now()}));setLoggedIn(u);setLoginError('');}
    else setLoginError('Incorrect username or password');
  };
  if(!loggedIn) return <div className="login-page"><div className="login-card"><div className="login-brand"><strong>TULLY &amp; SMITHS</strong><small>PROPERTY GROUP</small></div><h1>Communicate</h1><p>Sign in to your workspace</p><label>Username<input value={loginName} onChange={e=>setLoginName(e.target.value)} onKeyDown={e=>e.key==='Enter'&&login()} autoCapitalize="words"/></label><label>Password<input type="password" value={loginPass} onChange={e=>setLoginPass(e.target.value)} onKeyDown={e=>e.key==='Enter'&&login()}/></label>{loginError&&<div className="login-error">{loginError}</div>}<button className="login-button" onClick={login}>Sign in</button></div></div>;const[tasks,setTasks]=useState(()=>JSON.parse(localStorage.getItem('hxc_tasks')||'null')||seed),[modal,setModal]=useState(false),[view,setView]=useState('Board'),[active,setActive]=useState(null),[selectedPerson,setSelectedPerson]=useState(loggedIn),[messageTask,setMessageTask]=useState(null),[filter,setFilter]=useState('My Tasks');useEffect(()=>localStorage.setItem('hxc_tasks',JSON.stringify(tasks)),[tasks]);const save=t=>{setTasks(x=>x.some(a=>a.id===t.id)?x.map(a=>a.id===t.id?t:a):[...x,{...t,createdBy:loggedIn,readByOwner:false}]);setModal(false);setActive(null)};
