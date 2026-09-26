@@ -213,3 +213,9 @@ header b{color:inherit}
   .card-audit{font-size:10px!important;line-height:1.35!important}
   .workflow-check{width:100%!important;box-sizing:border-box!important}
 }
+
+/* Desktop: four permanent user columns; mobile selector unchanged */
+@media (min-width:801px){
+  .people-tabs{display:none!important}
+  .board .col{display:block!important}
+}
