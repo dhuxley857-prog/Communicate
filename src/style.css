@@ -227,3 +227,18 @@ header b{color:inherit}
  .board>.col>.person small{display:block!important;color:#f4efdc!important;font-size:10px!important;margin-top:2px!important}
  .board>.col>.person>span{display:flex!important;align-items:center!important;justify-content:center!important;width:28px!important;height:28px!important;border-radius:50%!important;background:#c6a04e!important;color:#0e2a47!important;font-weight:800!important}
 }
+
+/* Desktop single-list views: My Tasks, Risk and Overdue */
+@media (min-width:801px){
+ .board.desktop-list-view{display:block!important;width:100%!important}
+ .board.desktop-list-view>.col{display:none!important}
+ .board.desktop-list-view>.col:has(.task-card){display:block!important;width:100%!important;max-width:none!important;background:transparent!important;padding:0!important}
+ .board.desktop-list-view>.col>.person{display:none!important}
+ .board.desktop-list-view .task-card{display:grid!important;grid-template-columns:minmax(260px,2fr) minmax(180px,1fr) minmax(220px,1.2fr) 140px!important;column-gap:18px!important;align-items:center!important;width:100%!important;max-width:none!important;margin:0 0 8px!important;padding:12px 16px!important}
+ .board.desktop-list-view .task-card .cardtop{grid-column:1!important}
+ .board.desktop-list-view .task-card h3{grid-column:1!important;margin:3px 0!important}
+ .board.desktop-list-view .task-card .issued-line{grid-column:2!important;grid-row:1 / span 2!important}
+ .board.desktop-list-view .task-card .dates{grid-column:3!important;grid-row:1 / span 2!important}
+ .board.desktop-list-view .task-card .progress,.board.desktop-list-view .task-card .pct{grid-column:4!important}
+ .board.desktop-list-view .task-card>p,.board.desktop-list-view .task-card .card-audit,.board.desktop-list-view .task-card .readonly-hint,.board.desktop-list-view .task-card .workflow-check{grid-column:1 / -1!important}
+}
