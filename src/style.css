@@ -91,3 +91,9 @@ header b{color:inherit}
 .amberstat{background:#fff7e3!important}.amberstat b{color:#b77900!important}.redstat{background:#fff0ef!important}.redstat b{color:#b42318!important}
 
 @media(max-width:800px){body{padding-bottom:18px}header nav{display:flex!important;position:static!important;background:transparent!important;padding:0!important;justify-content:flex-end!important}header nav button{flex:0 0 auto!important;padding:7px 6px!important;font-size:10px!important}}
+
+/* Clean single-line task summary */
+.stats{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:0!important;width:100%;background:#fff;border:1px solid #e1e4e8;border-radius:10px;overflow:hidden}
+.stats span{display:flex!important;align-items:center;justify-content:center;gap:6px;border:0!important;border-right:1px solid #e1e4e8!important;border-radius:0!important;padding:12px 8px!important;white-space:nowrap}
+.stats span:last-child{border-right:0!important}.stats b{margin:0!important;font-size:18px}
+@media(max-width:800px){.hero{margin-bottom:14px}.stats{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));overflow:visible!important}.stats span{font-size:10px!important;padding:9px 3px!important;gap:3px}.stats b{font-size:15px!important}}
