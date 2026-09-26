@@ -76,3 +76,6 @@ header b{color:inherit}
 
 .header-actions{display:flex;align-items:center;gap:8px}.csvbtn{border:1px solid rgba(244,239,220,.55);background:transparent;color:#f4efdc;border-radius:8px;padding:10px 13px;font-weight:700;cursor:pointer}
 @media(max-width:800px){.header-actions{position:absolute;right:10px}.csvbtn{font-size:11px;padding:8px 9px}.header-actions .add{position:fixed}.filters button{cursor:pointer;touch-action:manipulation}.people-tabs button{cursor:pointer;touch-action:manipulation}}
+
+.csv-export{display:block;margin:24px 0 90px auto;border:1px solid #ccd4dc;background:#fff;color:#526477;border-radius:8px;padding:9px 13px;font-size:11px;font-weight:700;cursor:pointer}
+@media(max-width:800px){.csv-export{margin:20px 2px 86px auto;padding:9px 12px}.header-actions{right:10px}}
