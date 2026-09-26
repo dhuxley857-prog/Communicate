@@ -53,3 +53,20 @@ header b{color:inherit}
 }
 
 .login-page{min-height:100dvh;background:#0e2a47;display:grid;place-items:center;padding:22px}.login-card{width:min(100%,390px);background:#fff;border-radius:18px;padding:32px 26px;box-shadow:0 20px 50px #071a2d66}.login-brand{background:#0e2a47;color:#f4efdc;text-align:center;margin:-32px -26px 28px;padding:24px;border-radius:18px 18px 0 0}.login-brand strong{display:block;font-family:Georgia,serif;font-size:21px;letter-spacing:.6px}.login-brand small{display:block;color:#fff;font-size:8px;letter-spacing:3px;margin-top:7px}.login-card h1{margin:0;color:#0e2a47}.login-card>p{margin:7px 0 24px;color:#647184}.login-card label{display:block;font-size:12px;font-weight:700;color:#23364c;margin:14px 0}.login-card input{display:block;width:100%;box-sizing:border-box;margin-top:7px;padding:14px;border:1px solid #d8dde3;border-radius:9px;font-size:16px}.login-button{width:100%;border:0;border-radius:9px;background:#0e2a47;color:#fff;padding:14px;font-weight:700;font-size:15px;margin-top:10px}.login-error{background:#fff0ee;color:#b42318;padding:10px;border-radius:8px;font-size:12px}
+
+/* Professional Tully & Smiths sign-in */
+.login-page{position:relative;overflow:hidden;background:linear-gradient(145deg,#081c30 0%,#0e2a47 55%,#173c60 100%);font-family:inherit}
+.login-page:before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 0 58%,rgba(198,160,78,.08) 58% 58.4%,transparent 58.4% 100%);pointer-events:none}
+.login-page:after{content:"";position:absolute;width:420px;height:420px;border:1px solid rgba(244,239,220,.08);border-radius:50%;right:-210px;bottom:-210px;box-shadow:0 0 0 70px rgba(244,239,220,.025),0 0 0 140px rgba(244,239,220,.018);pointer-events:none}
+.login-card{position:relative;z-index:1;width:min(100%,410px);padding:0 34px 34px;border-radius:16px;background:rgba(255,255,255,.985);box-shadow:0 28px 80px rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.35)}
+.login-brand{margin:0 -34px 30px;padding:32px 24px 27px;border-radius:16px 16px 0 0;background:#0e2a47;border-bottom:3px solid #c6a04e}
+.login-brand:before{content:"⌂⌂⌂";display:block;width:58px;margin:0 auto 13px;color:#f4efdc;font-size:28px;letter-spacing:-9px;overflow:hidden}
+.login-brand strong{font-size:22px;color:#f4efdc;letter-spacing:.9px}.login-brand small{font-size:8px;letter-spacing:3.4px}
+.login-card h1{text-align:center;font-family:Georgia,serif;font-size:27px;font-weight:500;letter-spacing:.2px}
+.login-card>p{text-align:center;margin:8px 0 28px;color:#718096;font-size:13px}
+.login-card label{font-size:11px;text-transform:uppercase;letter-spacing:.7px;color:#30465c;margin:16px 0}
+.login-card input{margin-top:8px;padding:14px 15px;border:1px solid #d5dce4;background:#f9fafb;border-radius:8px;outline:none;transition:.2s}
+.login-card input:focus{border-color:#c6a04e;box-shadow:0 0 0 3px rgba(198,160,78,.12);background:#fff}
+.login-button{margin-top:14px;padding:15px;background:#0e2a47;border-radius:8px;letter-spacing:.3px;box-shadow:0 6px 15px rgba(14,42,71,.18)}
+.login-button:hover{background:#153957}
+@media(max-width:600px){.login-page{padding:18px}.login-card{padding:0 22px 27px;border-radius:14px}.login-brand{margin:0 -22px 26px;padding:27px 18px 23px;border-radius:14px 14px 0 0}.login-brand strong{font-size:19px}.login-card h1{font-size:24px}.login-card>p{margin-bottom:23px}}
