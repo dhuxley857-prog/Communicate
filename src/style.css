@@ -159,3 +159,17 @@ header b{color:inherit}
  .header-actions .add svg{width:18px;height:18px}
  .header-actions .add{font-size:0;gap:0}
 }
+
+/* Add Task as first primary tab — reversed colourway */
+.filters .filter-add{
+ display:flex!important;align-items:center!important;justify-content:center!important;gap:5px!important;
+ background:#0e2a47!important;color:#f4efdc!important;border:1px solid #0e2a47!important;
+ font-weight:800!important;
+}
+.filters .filter-add svg{width:15px;height:15px;stroke:#c6a04e;stroke-width:2.5}
+.filters .filter-add:hover{background:#173a5d!important;color:#fff!important}
+@media(max-width:800px){
+ .filters .filter-add{min-width:38px!important;width:38px!important;height:34px!important;padding:0!important;flex:0 0 38px!important}
+ .filters .filter-add span{display:none!important}
+ .filters .filter-add svg{width:18px;height:18px}
+}
