@@ -242,3 +242,18 @@ header b{color:inherit}
  .board.desktop-list-view .task-card .progress,.board.desktop-list-view .task-card .pct{grid-column:4!important}
  .board.desktop-list-view .task-card>p,.board.desktop-list-view .task-card .card-audit,.board.desktop-list-view .task-card .readonly-hint,.board.desktop-list-view .task-card .workflow-check{grid-column:1 / -1!important}
 }
+
+/* Text-only Tully & Smiths brand alignment */
+.brand{gap:0!important;min-width:210px!important}
+.brand>span{display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:4px!important}
+.brand strong{display:block!important;line-height:1!important}
+.brand small{display:block!important;line-height:1!important}
+@media(min-width:801px){
+ header{padding-left:28px!important;padding-right:28px!important}
+ .brand{height:72px!important;justify-content:flex-start!important;align-items:center!important}
+ .brand strong{font-size:18px!important;letter-spacing:.45px!important}
+ .brand small{font-size:8px!important;letter-spacing:2.45px!important;margin-left:1px!important}
+}
+@media(max-width:800px){
+ .brand{min-width:0!important}
+}
