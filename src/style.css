@@ -79,3 +79,6 @@ header b{color:inherit}
 
 .csv-export{display:block;margin:24px 0 90px auto;border:1px solid #ccd4dc;background:#fff;color:#526477;border-radius:8px;padding:9px 13px;font-size:11px;font-weight:700;cursor:pointer}
 @media(max-width:800px){.csv-export{margin:20px 2px 86px auto;padding:9px 12px}.header-actions{right:10px}}
+
+.unread-alert{background:#c62828;color:#fff;font-size:10px;font-weight:800;letter-spacing:.5px;padding:7px 9px;border-radius:6px;margin:8px 0}
+.card-audit{margin-top:10px;padding-top:9px;border-top:1px solid #e7ebef;font-size:10px;color:#617184}.card-audit>b{display:block;color:#24394e;text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px}.card-audit>div{padding:6px 0;border-bottom:1px solid #f0f2f4;line-height:1.35}.card-audit>div:last-child{border-bottom:0}.card-audit strong{color:#0e2a47}.card-audit span{color:#526477}.card-audit .audit-unread{background:#fff0ee;color:#b42318;margin:0 -6px;padding:7px 6px;border-radius:5px}.card-audit .audit-unread strong,.card-audit .audit-unread span{color:#b42318}
