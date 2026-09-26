@@ -135,3 +135,6 @@ header b{color:inherit}
  .filters::-webkit-scrollbar{display:none}
  .filters button{flex:0 0 auto!important;white-space:nowrap!important;padding:8px 11px!important;font-size:11px!important}
 }
+
+.issued-line{display:flex;align-items:center;gap:5px;margin:-3px 0 9px;font-size:11px;color:#6d7783}.issued-line b{color:#0e2a47;font-weight:800}
+@media(max-width:800px){.issued-line{font-size:10px;margin:-2px 0 8px;flex-wrap:wrap}}
