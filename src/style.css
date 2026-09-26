@@ -138,3 +138,24 @@ header b{color:inherit}
 
 .issued-line{display:flex;align-items:center;gap:5px;margin:-3px 0 9px;font-size:11px;color:#6d7783}.issued-line b{color:#0e2a47;font-weight:800}
 @media(max-width:800px){.issued-line{font-size:10px;margin:-2px 0 8px;flex-wrap:wrap}}
+
+/* Refined header Add Task control */
+.header-actions{display:flex;align-items:center;margin-left:auto}
+.header-actions .add{
+  background:transparent;
+  color:#f4efdc;
+  border:1px solid rgba(244,239,220,.42);
+  border-radius:7px;
+  padding:8px 12px;
+  font-size:12px;
+  font-weight:700;
+  box-shadow:none;
+  transition:.15s ease;
+}
+.header-actions .add:hover{background:rgba(255,255,255,.08);border-color:#c6a04e;color:#fff}
+.header-actions .add svg{width:15px;height:15px;color:#c6a04e}
+@media(max-width:800px){
+ .header-actions .add{width:36px;height:36px;padding:0;justify-content:center;border-radius:8px}
+ .header-actions .add svg{width:18px;height:18px}
+ .header-actions .add{font-size:0;gap:0}
+}
