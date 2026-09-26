@@ -87,3 +87,5 @@ header b{color:inherit}
 .workflow-check{display:flex;align-items:center;gap:9px;margin:8px 0;padding:9px 11px;border-radius:7px;font-size:11px;font-weight:800}.workflow-check input{width:18px;height:18px;margin:0}.read-check{background:#c62828;color:#fff}.complete-check{background:#d99a16;color:#fff}.approve-check{background:#25834a;color:#fff}
 .task-id{color:#8b7138;letter-spacing:.5px}.archive-list{background:#fff;border:1px solid #e2e6ea;border-radius:12px;padding:18px;margin-top:18px}.archive-list h2{margin:0 0 14px;color:#0e2a47}.archive-row{display:grid;grid-template-columns:80px 1fr 100px 90px;gap:12px;align-items:center;padding:12px 8px;border-bottom:1px solid #edf0f2}.archive-row>b{color:#8b7138}.archive-row small{color:#6c7885}.archive-empty{color:#7a8793}
 @media(max-width:600px){.archive-list{padding:12px}.archive-row{grid-template-columns:65px 1fr;gap:5px 10px}.archive-row small{grid-column:2}.archive-row span{font-size:13px}}
+
+.amberstat{background:#fff7e3!important}.amberstat b{color:#b77900!important}.redstat{background:#fff0ef!important}.redstat b{color:#b42318!important}
