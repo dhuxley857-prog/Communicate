@@ -264,3 +264,12 @@ header b{color:inherit}
 
 .company-score{margin-top:18px;background:#fff;border:1px solid #e1e4e8;border-radius:12px;padding:22px;display:flex;align-items:center;justify-content:center;gap:34px;text-align:center}.company-score h3{margin:0 0 5px;color:#0e2a47;font-size:18px}.company-score p{margin:0;color:#6c7885;font-size:12px;max-width:230px}.score-donut{--score:0;width:150px;height:150px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--score-colour) calc(var(--score)*1%),#e9edf1 0)}.score-donut:before{content:"";position:absolute}.score-donut>div{width:112px;height:112px;background:#fff;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center}.score-donut strong{font-size:30px;color:#0e2a47;line-height:1}.score-donut span{font-size:9px;letter-spacing:1.2px;color:#6c7885;margin-top:6px;font-weight:800}.score-green{--score-colour:#1f8a4c}.score-amber{--score-colour:#d49b16}.score-red{--score-colour:#c33a32}.score-key{display:flex;flex-direction:column;gap:8px;text-align:left;font-size:11px;color:#647184}.score-key span{display:flex;align-items:center;gap:7px}.score-key i{width:9px;height:9px;border-radius:50%;display:inline-block}.key-green{background:#1f8a4c}.key-amber{background:#d49b16}.key-red{background:#c33a32}
 @media(max-width:800px){.company-score{flex-direction:column;gap:16px;padding:18px}.score-key{flex-direction:row;flex-wrap:wrap;justify-content:center}.score-donut{width:140px;height:140px}.score-donut>div{width:104px;height:104px}}
+
+/* Dashboard overdue alerts */
+.overdue-strip-list{display:flex;flex-direction:column;gap:6px;margin-top:14px}
+.overdue-strip{width:100%;display:flex;align-items:center;gap:18px;background:#b42318;color:#fff;border-radius:8px;padding:10px 14px;font-size:12px;font-weight:600;line-height:1.2;box-shadow:0 2px 7px rgba(180,35,24,.12);overflow:hidden}
+.overdue-strip>b{font-weight:900;letter-spacing:.5px;flex:0 0 auto}
+.overdue-strip span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.overdue-strip span:nth-last-child(2){flex:1}
+.overdue-strip strong{font-weight:800}
+@media(max-width:800px){.overdue-strip{gap:8px;padding:9px 10px;font-size:10px;overflow-x:auto}.overdue-strip span{overflow:visible;text-overflow:clip;flex:0 0 auto!important}}
