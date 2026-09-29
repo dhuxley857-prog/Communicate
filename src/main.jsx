@@ -1,5 +1,5 @@
 import React,{useState,useEffect}from'react';import{createRoot}from'react-dom/client';import{Pin,Plus,Inbox,AlertTriangle,Clock,MessageSquare,X}from'lucide-react';import'./style.css';import{supabase}from'./supabase';
-const PEOPLE=['Tommy','Paddy','Ronnie','Ashleigh'];const seed=[];
+const PEOPLE=['Tommy','Paddy','Ronnie','Ashleigh'];const LOGIN_USERS=[...PEOPLE,'Daniel'];const DANIEL_PASSWORD_HASH='c7c725fc72474ee7d4dea52b45cb26b8e567b9a26e87fc291dfa9447d25964d2';const seed=[];
 function App(){
  const [loggedIn,setLoggedIn]=useState(()=>{try{const s=JSON.parse(localStorage.getItem('hxc_login')||'null');return s&&Date.now()-s.at<30*60*1000?s.user:''}catch{return''}});
  const [loginName,setLoginName]=useState('');
