@@ -5,7 +5,7 @@ function App(){
  const [loginName,setLoginName]=useState('');
  const [loginPass,setLoginPass]=useState('');
  const [loginError,setLoginError]=useState('');
- const login=()=>{
+ const login=async()=>{
    const u=PEOPLE.find(p=>p.toLowerCase()===loginName.trim().toLowerCase());
    if(u && loginPass===u+'99!'){await supabase.from('communicate_logins').insert({user_name:u});localStorage.setItem('hxc_login',JSON.stringify({user:u,at:Date.now()}));window.location.reload();}
    else setLoginError('Incorrect username or password');
