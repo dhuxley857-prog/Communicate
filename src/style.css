@@ -294,4 +294,4 @@ header b{color:inherit}
 
 
 /* Persistent session control */
-.logout-fixed{position:fixed;right:18px;bottom:18px;z-index:1000;border:1px solid #d8d8d8;background:#fff;color:#333;border-radius:8px;padding:9px 14px;font:600 13px inherit;box-shadow:0 2px 10px rgba(0,0,0,.08);cursor:pointer}.logout-fixed:hover{background:#f5f5f5}@media(max-width:700px){.logout-fixed{right:12px;bottom:12px;padding:8px 12px;font-size:12px}}
+.logout-fixed{position:fixed;right:20px;bottom:18px;z-index:1000;border:0;background:#17253a;color:#fff;border-radius:10px;padding:10px 16px;font:700 12px inherit;letter-spacing:.02em;box-shadow:0 4px 14px rgba(23,37,58,.18);cursor:pointer;transition:transform .15s ease,opacity .15s ease}.logout-fixed:hover{opacity:.92;transform:translateY(-1px)}@media(max-width:700px){.logout-fixed{right:12px;bottom:12px;padding:9px 14px;border-radius:9px;font-size:11px}}
